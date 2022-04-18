@@ -1,0 +1,41 @@
+:root{
+    --red: #ff4c4c;
+    --blue:#003ec9;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    background-color: var(--blue);
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--red);
+    font-size: 32px;
+    color: white;
+    border: 1px solid white;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px; 
+    
+}
+.nav{
+    grid-column: span 4;
+    order:2
+}
+.brand{
+    grid-column: span 1;
+    order: 1;
+}
+.content-a{
+    grid-column: 1/-1;
+    order: 4;
+}
+.content-b{
+    grid-column: 1/-1;
+    order: 3;
+}
